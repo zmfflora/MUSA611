@@ -1,7 +1,7 @@
 # Syllabus
 
 * **Course:** CPLN692-MUSA611, University of Pennsylvania
-* **Location:** TBD
+* **Location:** Meyerson Hall B2
 * **Schedule:** 2-5PM, Fridays
 * **Instructors:**
     * Jeff Frankl, [jefffrankl@gmail.com](mailto:jefffrankl@gmail.com)
@@ -12,8 +12,8 @@
     * Nathan Zimmerman: TBD
     * Xunze (Aaron) Su: TBD
 * **Need help?**
-    * [![Gitter](https://badges.gitter.im/CPLN692-MUSA611/syllabus.svg)](https://gitter.im/CPLN692-MUSA611/syllabus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-    * Look through and create [issues](https://github.com/CPLN690-MUSA610/syllabus/issues)
+    * [![Gitter](https://badges.gitter.im/CPLN692-MUSA611/syllabus.svg)](https://gitter.im/CPLN692-MUSA611/syllabus)
+    * Search (the internet)
 
 ## Software
 * [Atom Editor](https://atom.io/)
