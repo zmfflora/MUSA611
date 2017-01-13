@@ -9,10 +9,10 @@
 * **Teaching Assistant:** Xunze (Aaron) Su, [xunzes@design.upenn.edu](mailto:xunzes@design.upenn.edu)
 * **Office Hours:**
     * Jeff Frankl: TBD
-    * Nathan Zimmerman: TBD
+    * Nathan Zimmerman: 12-1 Fridays @ The Graduate Student Center
     * Xunze (Aaron) Su: TBD
 * **Need help?**
-    * [![Gitter](https://badges.gitter.im/CPLN692-MUSA611/syllabus.svg)](https://gitter.im/CPLN692-MUSA611/syllabus)
+    * [![Gitter](https://badges.gitter.im/CPLN692-MUSA611/syllabus.svg)](https://gitter.im/CPLN692-MUSA611/Lobby)
     * Search (the internet)
 
 ## Software
