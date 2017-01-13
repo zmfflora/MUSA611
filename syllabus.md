@@ -10,7 +10,7 @@
 * **Office Hours:**
     * Jeff Frankl: 6–7pm Tuesday @ The Graduate Student Center
     * Nathan Zimmerman: 12-1pm Friday @ The Graduate Student Center
-    * Xunze (Aaron) Su: TBD
+    * Xunze (Aaron) Su: 7:30-8:30pm Monday @ Education Commons
 * **Need help?**
     * [![Gitter](https://badges.gitter.im/CPLN692-MUSA611/syllabus.svg)](https://gitter.im/CPLN692-MUSA611/Lobby)
     * Search (the internet)
