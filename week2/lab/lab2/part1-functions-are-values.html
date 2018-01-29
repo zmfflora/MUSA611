@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <!--left panel-->
+    <div style="position:fixed;left:0px;width:400px">
+    </div>
+    <!--map-->
+    <div id="map" style="position:fixed;right:0px;left:400px;height:100%;">
+    </div>
+
+    <!--javascript-->
+    <script>
+
+      /* =====================
+
+      # Lab 2, Part 1 — Functions help us organize our code (and our thoughts)
+
+      ## Introduction
+
+      It is common, in programming, to rewrite code so that it is easier to read and understand.
+      In this exercise, we start with an array and a loop. In this loop, we try to count the
+      different values in different ways: we add number values (e.g. 1 is worth 1, 2 is worth 2)
+      to string lengths (e.g. 'cat' is worth 3 and 'banana' is worth 6). We ignore all other types.
+
+      ===================== */
+
+      // Here's an array that we need to loop through:
+      var theArray = ['A short story.', 42, 55, ['Another story'], 23, 12, 2, 4, 5, 6, 'bar', 'foo'];
+
+      // Here's the variable we need to hold our count in:
+      var exampleSum = 0; // To count of the strings
+
+      // A loop for summing the contents of theArray
+      for (var i = 0; i < theArray.length; i++) {
+        var arrayValue = theArray[i];
+        if (typeof arrayValue === 'string') {         // String case
+          exampleSum = exampleSum + arrayValue.length
+        } else if (typeof arrayValue === 'number') {  // Number case
+          exampleSum = exampleSum + arrayValue
+        } else {                                      // Otherwise
+          console.log("Not sure how to proceed with value:", arrayValue)
+        }
+      }
+
+      /* =====================
+
+      Start your code below
+
+      ===================== */
+
+      // Store sum you compute in this variable:
+      var yourSum = 0;
+
+      // Refactor is a word programmers sometimes use which can be translated as 'rewrite'.
+
+      // Your first task in this lab will be to refactor the example code from above
+      //  into a few different functions that are reusable to the extent that you can.
+      // One possible refactor would be to write a function that does one iteration of
+      //  all of the work in the loop above. With such a function, we separate the logic
+      //  which iterates over our array (the loop) from the logic which carries out a
+      //  single run within the loop.
+      // Depending on how you think about this problem, different answers are possible!
+
+      // Be sure to refresh the page and look at console output to see whether your refactor
+      //  works! You should see 'Success: true' if all goes well.
+
+      /* Define your function here */
+
+      function sumUp(thisArray){
+        for(var i = 0; i < thisArray.length;i++) {
+          var arrayValue = thisArray[i];
+          if (typeof arrayValue === 'string') {         // String case
+            yourSum = yourSum + arrayValue.length
+          }
+          else if (typeof arrayValue === 'number') {  // Number case
+            yourSum = yourSum + arrayValue
+          }
+          else {                                      // Otherwise
+            console.log("Not sure how to proceed with value...:", arrayValue);
+          }
+        }
+      }
+      sumUp(theArray);
+
+      /* =====================
+
+      End code
+
+      ===================== */
+      console.log("Success: ", yourSum === 169)
+    </script>
+  </body>
+</html>

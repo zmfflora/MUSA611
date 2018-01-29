@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <script>
+
+    /* =====================
+
+    # Lab 1, Part 5 — Stretch Goal: Project Euler
+
+    ## Introduction
+
+    Practice your Javascript and math skills by solving a problem on Project
+    Euler. Project Euler is a series of challenging math and computer science
+    problems that can be solved using any language (for our class, use
+    Javascript).
+
+    Solve the first problem on this page https://projecteuler.net/archives
+    (Multiples of 3 and 5). To check your answer, create an account and you will
+    be able to submit your final result.
+
+    If you complete problem 1, move on to problem 2!
+
+    ===================== */
+var sum = 0;
+for(var i=1; i<1000; i++){
+  if((i%3===0)&(i%5!==0)){
+    sum = sum + i;
+  }
+  else if((i%3!==0)&(i%5===0)){
+    sum =sum + i;
+  }
+  else if((i%3===0)&(i%5===0)){
+    sum =sum + i;
+  }
+}
+console.log(sum);
+
+
+var Fibonacci = [];
+Fibonacci[0]=1;
+Fibonacci[1]=2;
+for(var i=2; Fibonacci[i-1]<4000000;i++){
+  Fibonacci[i]=Fibonacci[i-1]+Fibonacci[i-2];
+}
+var summ = 0;
+for(var i=0; i < Fibonacci.length; i++){
+  if(Fibonacci[i]%2===0){
+    summ = summ+Fibonacci[i];
+  }
+}
+console.log(summ)
+    /* =====================
+
+    End code
+
+    ===================== */
+
+    </script>
+  </body>
+</html>
