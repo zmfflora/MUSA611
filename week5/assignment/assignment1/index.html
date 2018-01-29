@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!-- =====================
+    Edit css/main.css
+    ====================== -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <!-- =====================
+
+    # Week 4 - Assignment 1
+
+    ## Introduction
+
+    We've got some interesting school data that we're working with. In addition
+    to displaying it on the map, we also want to show it in a list. Notice that
+    our project has an element, .sidebar, that contains no content. We are going
+    to fill it with filtering functionality and a list of schools.
+
+    ## Build components with HTML and CSS
+
+    Take a look at the image screen-assignment.png. Add HTML inside of the
+    element <div class="sidebar"></div> and add CSS inside the file
+    css/style.css to recreate this content in the browser. You do not need to
+    create the list of schools dynamically using the data—just hardcode three schools
+    (in a future assignment, we will generate the list with the same data that we use
+    to generate markers on our map!).
+
+    Note: the blue part of the select input in screen-assignment.png is the
+    default styling for Chrome on OSX—you do not need to change the styling of
+    this element to match exactly, just go with the default style on your system.
+    You should be able to do most CSS for this assignment with `margin`, `padding`,
+    `font-weight`, `font-size`, `background-color`, and `color`. Positioning the
+    "Hide filters" button is a little trickier: Look into `float` or absolute
+    positioning, but feel free to try out a different approach.
+
+    ## Stretch Goal: Make it look cool
+
+    Try changing the colors. Make it look a little different. There
+    is no right answer here: just try something and make it your own. Take a
+    look at neat websites on https://www.typewolf.com/ or http://www.awwwards.com/
+    for color or styling inspiration.
+
+    ====================== -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <link rel="stylesheet" href="css/style.css">
+        <div>
+          <h1>Filters</h1>
+          <button id="hidefilter">Hide Filters</button>
+        </div>
+        <div>
+          <br><p>By Name</p><input id="nameinput" type="text">
+        </div>
+        <div>
+          <br><p>By Grade</p>
+          <select>
+            <option value="all">All Grades</option>
+          </select>
+        </div><br>
+        <div>
+          <br><h1>Schools</h1>
+          <br><div class="school">
+            <p>Henry, Charles W.</p>
+            <p class="edu">Elem/Middle</p>
+            <br><p class="address">601 Carpenter La.</p>
+            <p class="address">19119 - 3405</p>
+          </div>
+          <br><div class="school">
+            <p>Universal Creighton Charter School</p>
+            <p class="edu">Elem/Middle</p>
+            <br><p class="address">5401 Tabor Ave</p>
+            <p class="address">19120 - 3614</p>
+          </div>
+          <br><div class="school">
+            <p>Marshall, John</p>
+            <p class="edu">Elementary School</p>
+          </div>
+        </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+
+    <!-- Javascript Imports -->
+    <script src="js/leaflet.js"></script>
+    <script src="js/underscore.js"></script>
+
+    <!-- Javascript Code -->
+    <script>
+      var map = L.map('map', {
+        center: [39.9522, -75.1639],
+        zoom: 14
+      });
+      var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+	      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      	subdomains: 'abcd',
+      	minZoom: 0,
+      	maxZoom: 20,
+      	ext: 'png'
+      }).addTo(map);
+    </script>
+  </body>
+</html>
