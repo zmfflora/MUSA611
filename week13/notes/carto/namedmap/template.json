@@ -1,0 +1,33 @@
+{
+  "version": "0.0.1",
+  "name": "district_2011",
+  "auth": {
+    "method": "token",
+    "valid_tokens": [
+      "auth_token1",
+    ]
+  },
+  "placeholders": {
+    "color": {
+      "type": "css_color",
+      "default": "red"
+    },
+    "cartodb_id": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#pacd_2011 { line-width: 1; line-color: #0B645E; line-opacity: 0.99;}",
+          "sql": "SELECT the_geom, district_number, the_geom_webmercator FROM pacd_2011"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- =====================
+      Add elements in this space
+      ====================== -->
+      <h1 id="main-heading">Week 5 Assignment</h1>
+       <label id="text-label1" for="text-input1">URL:</label>
+       <input id="text-input1" class="input-text" type="text" placeholder="text here" value='https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json'>
+       <br>
+       <br>
+       <label id="lat-label1" for="lat-input1">Latitude:</label>
+       <input id="lat-input1" type="text" placeholder="text here" value="LAT">
+       <br>
+       <br>
+       <label id="long-label2" for="long-input2">Longtitude:</label>
+       <input id="long-input2" type="text" placeholder="text here" value="LONG_">
+       <br>
+       <button>Submit</button>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
