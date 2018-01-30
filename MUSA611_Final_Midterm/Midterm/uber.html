@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  </head>
+  <body>
+  <div class='uber_header'>
+	<h4>Uber Pickups in NYC</h4>
+  </div>
+    <!-- Map -->
+	<div class='uber_main'>
+	<div class='mapBlock'>
+		 <div id="map1" class="mapuber"></div>
+		<div id="map2" class="mapuber"></div>
+		<div id="map3" class="mapuber"></div>
+		<div id="map4" class="mapuber"></div>
+		<div id="map5" class="mapuber"></div>
+	</div>
+		<div class='mapTips'>
+		<div class="uber_legend">
+		  <h3 id="legend" >Uber Count</h3>
+      <!-- #FCE9E9  #F8C3CD #F4A7B9  #E16B8C  #D0104C  #8E354A -->
+		  <div id="color-box" style="background-color: #FCE9E9;"></div><p>  0-400</p>
+		  <div id="color-box" style="background-color: #F8C3CD;"></div><p>  400-1500</p>
+		  <div id="color-box" style="background-color: #F4A7B9;"></div><p>  1500-2500</p>
+		  <div id="color-box" style="background-color: #E16B8C;"></div><p>  2500-4000</p>
+		  <div id="color-box" style="background-color: #D0104C;"></div><p>  4000-7000</p>
+		  <div id="color-box" style="background-color: #8E354A;"></div><p>  >7000</p>
+    </div>
+    <div class="uber_legend2" style='display:none;'>
+      <h3 id="legend" >Uber Count</h3>
+      <!-- #CFE6FF #A5DEE4  #81C7D4 #33A6B8  #0089A7  #336774  #255359 -->
+		  <div id="color-box" style="background-color: #C5EFFF;"></div><p>  0-25</p>
+		  <div id="color-box" style="background-color: #A5DEE4;"></div><p>  25-100</p>
+		  <div id="color-box" style="background-color: #81C7D4;"></div><p>  100-200</p>
+		  <div id="color-box" style="background-color: #0089A7;"></div><p>  200-300</p>
+		  <div id="color-box" style="background-color: #336774;"></div><p>  300-500</p>
+		  <div id="color-box" style="background-color: #255359;"></div><p>  >500</p>
+
+		</div>
+		<div class='uber_content'>
+			<h3>
+			<span class='uber_title'>Overview of Uber Pickups in NYC</span>
+			<span class='uber_title' style='display:none;'>Number of Uber Pickups at midnight</span>
+			<span class='uber_title' style='display:none;'>Number of Uber Pickups at 8am</span>
+			<span class='uber_title' style='display:none;'>Number of Uber Pickups at noon</span>
+			<span class='uber_title' style='display:none;'>Number of Uber Pickups at 7pm</span>
+				<div class='uber_control'>
+				<a class='prePage' style='display:none;'>previous </a>
+				<a class='nextPage'>next</a>
+				</div>
+			</h3>
+			<p class='uber_detail'>The data for this webpage is from Uber trip data in NYC in April 2014, we are here to figure out the most popular pickup locations in NYC as well as the peak time for Uber users. As shown in the overall Uber count map above, most pickups happened in Manhattan area and JFK. </p>
+
+			<p class='uber_detail' style='display:none;'>The count of Uber pickups at midnight is shown as above, the popular pickup locations is JFK and lower Manhattan area.</p>
+
+			<p class='uber_detail' style='display:none;'>The count of Uber pickups at 8 am is shown as above, compared to the pickup map at midnight, there are much more pickup requests happened in the morning hour. And the pickup locations are no longer clustered around JFK, instead the popular pickup locations in the morning is the whole Manhattan area. </p>
+
+			<p class='uber_detail' style='display:none;'>The number of pickup requests at noon are slightly larger than in the morning, but pickup locations are more clustered around Midtown and JFK.</p>
+
+			<p class='uber_detail' style='display:none;'>Evening should be the busiest hours for Uber, Midtown, lower Manhattan and JFK are all popular pickup locations. </p>
+		</div>
+		</div>
+	</div>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+	  <script src="js/setup2.js"></script>
+
+  </body>
+</html>
